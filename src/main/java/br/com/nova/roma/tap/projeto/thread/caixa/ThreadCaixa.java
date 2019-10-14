@@ -1,9 +1,6 @@
 package br.com.nova.roma.tap.projeto.thread.caixa;
-
-import java.util.ArrayList;
 import java.util.Random;
 
-import com.sun.swing.internal.plaf.synth.resources.synth;
 
 import br.com.nova.roma.tap.projeto.entity.Cliente;
 import br.com.nova.roma.tap.projeto.interfaces.impl.FuncoesLotericaImpl;

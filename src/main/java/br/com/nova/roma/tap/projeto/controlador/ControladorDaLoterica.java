@@ -8,6 +8,7 @@ import br.com.nova.roma.tap.projeto.interfaces.impl.FuncoesLotericaImpl;
 public class ControladorDaLoterica extends FuncoesLotericaImpl {
 
 	private final Queue<String> listaNomeCaixa = new LinkedList<String>();
+	@SuppressWarnings("unused")
 	private static boolean aberto = true;
 	
 	public ControladorDaLoterica() {
@@ -18,7 +19,7 @@ public class ControladorDaLoterica extends FuncoesLotericaImpl {
 		System.out.println("Fechando Loterica");
 		System.out.println("Loterica fechada:" + Thread.currentThread().getName());
 
-		aberto = false;
+		setAberto(false);
 		synchronized (this.listaNomeCaixa) {
 			this.listaNomeCaixa.notifyAll();
 
@@ -26,4 +27,5 @@ public class ControladorDaLoterica extends FuncoesLotericaImpl {
 		
 		System.exit(0);
 	}
+
 }

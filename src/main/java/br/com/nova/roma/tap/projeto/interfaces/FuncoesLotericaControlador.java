@@ -1,7 +1,6 @@
 package br.com.nova.roma.tap.projeto.interfaces;
 
 import br.com.nova.roma.tap.projeto.entity.Caixa;
-import br.com.nova.roma.tap.projeto.entity.Cliente;
 
 public interface FuncoesLotericaControlador {
      

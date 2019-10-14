@@ -1,6 +1,5 @@
 package br.com.nova.roma.tap.projeto.entity;
 
-import java.util.ArrayList;
 
 public class Cliente {
 	private String nomeCliente;
